@@ -14,3 +14,21 @@
 #game, #start, .option, #results {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+audio {
+    position: relative;
+    left: 37.5%;
+    background-color: #ffffff00;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1rem;
+}

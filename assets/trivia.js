@@ -2,10 +2,10 @@ $(document).ready(function(){
     $("#timeRemains").hide();
     $("#start").click(trivia.start);
     $("#options").on("click", ".option", trivia.checker);
-    audio.play();
+    // audio.play();
 });
 
-var audio = new Audio("assets/music/Helen Dell, Dodger Stadium Organist - Take Me out to the Ballgame.mp3");
+// var audio = new Audio("assets/music/Helen Dell, Dodger Stadium Organist - Take Me out to the Ballgame.mp3");
 
 var trivia = {
     correct: 0,
@@ -115,11 +115,11 @@ var trivia = {
             clearInterval(trivia.time);
             trivia.resultID = setTimeout(trivia.guessResult, 3000);
             $("#results").show();
-            $("#results").html("<h3>Time's up! The answer was " + Object.values(trivia.answers)[trivia.currentSet] + ".<h3>");
+            $("#results").html("<h3>Time's up! The answer was " + Object.values(trivia.answers)[trivia.currentSet] + ".</h3>");
         }
         else if(trivia.currentSet === Object.keys(trivia.questions).length){
             $("#results").show();
-            $("#results").html("<h3>Thanks for playing!<h3>"+"<p>Correct: "+trivia.correct+"</p>"+"<p>Incorrect: "+trivia.incorrect+"</p>"+"<p>Unanswered: "+trivia.unanswered+"</p>"+"<p>Play again?</p>");
+            $("#results").html("<h3>Thanks for playing!</h3><br/>"+"<p>Correct: "+trivia.correct+"</p>"+"<p>Incorrect: "+trivia.incorrect+"</p>"+"<p>Unanswered: "+trivia.unanswered+"</p>"+"<p>Play again?</p>");
             $("#game").hide();
             $("#start").show();
         }
