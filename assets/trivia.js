@@ -112,6 +112,7 @@ var trivia = {
     },
 
     nextQuestion: function(){
+        $("#options").show();
         trivia.timerStart();
         var questionContent = Object.values(trivia.questions)[trivia.currentSet];
         $("#question").text(questionContent);
@@ -143,6 +144,7 @@ var trivia = {
             boo.play();
         }
         $("#results").append(photos);
+        $("#options").hide();
     },
 
     guessResult: function(){
@@ -163,6 +165,7 @@ var trivia = {
             trivia.result = false;
             clearInterval(trivia.time);
             trivia.resultID = setTimeout(trivia.guessResult, 3000);
+            $("#options").hide();
             $("#results").show();
             $("#results").html("<h3>Time's up! The answer was " + Object.values(trivia.answers)[trivia.currentSet] + ".</h3><br/>");
             $("#results").append(photos);
