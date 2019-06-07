@@ -27,7 +27,7 @@ var trivia = {
         q6: "Who is the only player to be killed by a pitch during a game?",
         q7: "As of 2019, which three teams won the last three World Series?",
         q8: "Who was the first pitcher to hit 100MPH?",
-        q9: "Name the only player to hit a home run and score an NFL touchdown in the same week.",
+        q9: "Name the only player to hit a home run and score a touchdown in the NFL in the same week.",
         q10: "What was the original name of the Houston Astros?",
         q11: "Whose jersey number was the first ever retired by an MLB team?",
         q12: "Who is the only player to hit two grand slams in one inning?",
